@@ -1,0 +1,139 @@
+    1  ды
+    2  ls
+    3  mkdir task1
+    4  cd task1
+    5  mkdir data
+    6  mkdir logs results scripts temp
+    7  tree
+    8  sudo apt install tree
+    9  tree
+   10  cd data
+   11  mkdir processed raw
+   12  tree
+   13  cs ..
+   14  cd ..
+   15  cd results
+   16  mkdir plots tables
+   17  cd ..
+   18  cd scripts
+   19  touch analyze.sh
+   20  cd ..
+   21  tree
+   22  cd data
+   23  cat > genes.fasta << 'EOF'
+   24  >human_chr1
+   25  ATGGCCATGGCCATGCCATGCCATGCCATG
+   26  >mouse_chr1  
+   27  ATGCCCATGCCCATGCCCATGCCCATGCC
+   28  >ecoli_genome
+   29  ATGCATGCATGCATGCATGCATGCATGCAT
+   30  EOF
+   31  cat > genes.fasta << 'EOF'
+   32  >human_chr1
+   33  ATGGCCATGGCCATGCCATGCCATGCCATG
+   34  >mouse_chr1  
+   35  ATGCCCATGCCCATGCCCATGCCCATGCC
+   36  >ecoli_genome
+   37  ATGCATGCATGCATGCATGCATGCATGCAT
+   38  EOF
+   39  cat > genes.fasta << 'EOF'
+   40  >human_chr1
+   41  ATGGCCATGGCCATGCCATGCCATGCCATG
+   42  >mouse_chr1  
+   43  ATGCCCATGCCCATGCCCATGCCCATGCC
+   44  >ecoli_genome
+   45  ATGCATGCATGCATGCATGCATGCATGCAT
+   46  EOF
+   47  cat > genes.fasta << 'EOF'
+   48  >human_chr1
+   49  ATGGCCATGGCCATGCCATGCCATGCCATG
+   50  >mouse_chr1  
+   51  ATGCCCATGCCCATGCCCATGCCCATGCC
+   52  >ecoli_genome
+   53  ATGCATGCATGCATGCATGCATGCATGCAT
+   54  EOF
+   55  cat > genes.fasta << 'EOF'
+   56  >human_chr1
+   57  ATGGCCATGGCCATGCCATGCCATGCCATG
+   58  >mouse_chr1  
+   59  ATGCCCATGCCCATGCCCATGCCCATGCC
+   60  >ecoli_genome
+   61  ATGCATGCATGCATGCATGCATGCATGCAT
+   62  EOF
+   63  cat genes.fasta 
+   64  grep '>' genes.fasta
+   65  grep -v '>' genes.fasta
+   66  head -n 3 genes.fasta
+   67  touch res.data
+   68  grep '>' genes.fasta > res.data
+   69  cat res.data 
+   70  grep -v '>' genes.fasta >> res.data 
+   71  head -n 3 genes.fasta >> res.data 
+   72  tail -n 2 genes.fasta >> res.data
+   73  cat res.data
+   74  cd ..
+   75  cd ~
+   76  sudo apt install ssh
+   77  sudo apt-get install ssh --fix-missing
+   78  ssh-keygen -t rsa -b 4096 -C "your@email.com"
+   79  ssh-keygen -t rsa -b 4096 -C "khokhlova.oa@phystech.edu"
+   80  cat .ssh/id_rsa.pub
+   81  ssh-keygen -t rsa -b 4096 -C "skrtzsl23@gmail.com"
+   82  cat .ssh/id_rsa.pub
+   83  ls
+   84  tree
+   85  less res.data
+   86  less data
+   87  less task1
+   88  cd data
+   89  cd directory
+   90  cd task1
+   91  cd data
+   92  cd res.data
+   93  cat res.data
+   94  df -h
+   95  du - sh
+   96  du -sh
+   97  > space.txt
+   98  tree
+   99  cat space.txt
+  100  df -h du -sh 
+  101  df -h >> space.txt
+  102  du -sh >> space.txt
+  103  cat space.txt
+  104  finf fasta
+  105  find fasta
+  106  cd task1
+  107  cd -
+  108  cd ~
+  109  find fasta
+  110  find genes.fasta
+  111  find "genes.fasta"
+  112  find /Users/skrtzsl/task1 -name ".fasta"
+  113  find /home/skrtzsl/task1 -name "*.fasta"
+  114  find /home/skrtzsl/task1 -name "*.fasta" > space.txt
+  115  grep -v "^>" $(cat space.txt) | fold -w1 |wc -l > nucleotides.txt
+  116  cat space.txt
+  117  { df -h; du -sh; } >> space.txt
+  118  find /home/skrtzsl/task1 -name "*.fasta" >> space.txt
+  119  grep -v "^>" /home/skrtzsl/task1/data/genes.fasta | fold -w1 | wc -l > /home/skrtzsl/task1/nucleotides.txt
+  120  cat /home/skrtzsl/task1/nucleotides.txt
+  121  grep -v "^>" /home/skrtzsl/task1/data/genes.fasta | wc -c
+  122  cat > /home/skrtzsl/task1/data/genes.fasta << 'EOF'
+>human_chr1
+ATGGCCTAGTGCCATGCCATGCCATGCCATG
+>mouse_chr1
+ATGCCCATGCCCATGCCCATGCCCATGCC
+>ecoli_genome
+ATGTCATGCATGCATGCATGCATGCATGCAT
+EOF
+
+  123  grep -v "^>" /home/skrtzsl/task1/data/genes.fasta | fold -w1 | wc -l
+  124  cat /home/skrtzsl/task1/nucleotides.txt
+  125  cp -r /home/skrtzsl/task1 /home/skrtzsl/task1_copy
+  126  rm -rf /home/skrtzsl/task1_copy/data /home/skrtzsl/task1_copy/scripts /home/skrtzsl/task1_copy/results /home/skrtzsl/task1_copy/logs /home/skrtzsl/task1_copy/temp
+  127  mv /home/skrtzsl/task1_copy /home/skrtzsl/task1_copy_empty
+  128  tree /home/skrtzsl -L 2
+  129  rm -rf /home/skrtzsl/task1_copy_empty/nucleotides.txt 
+  130  tree /home/skrtzsl -L 2
+  131  history > /home/skrtzsl/task1/commands.txt
