@@ -1,0 +1,11 @@
+commit 3b0ac2cab63d57e491cc818e6fa264b4befa6558
+Author: skrtsl23-alt <skrtsl23-alt@users.noreply.github.com>
+Date:   Wed Feb 11 15:33:02 2026 +0300
+
+    Reapply "add test script"
+    
+    This reverts commit 808cdece000ccc97bfa18e4fd568af787b66c158.
+
+diff --git a/scripts/test_script.sh b/scripts/test_script.sh
+new file mode 100644
+index 0000000..e69de29
